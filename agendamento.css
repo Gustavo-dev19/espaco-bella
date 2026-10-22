@@ -1,0 +1,123 @@
+/* CONFIGURAÇÕES GERAIS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(imagens/fundo.jpeg);
+    color: #2E2E2E;
+    font-family: Arial, sans-serif;
+}
+
+/* CABEÇALHO */
+.topo {
+    background: #3E5B4B;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    color: white;
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.voltar {
+    color:#2E2E2E;
+    background-color: white;
+    border: white ;
+    border-radius: 20px;
+    text-decoration: none;
+    size: 1px;
+}
+
+/* APRESENTAÇÃO */
+.apresentacao {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.apresentacao h1 {
+    color: white;
+    margin-bottom: 10px;
+}
+
+/* ÁREA PRINCIPAL */
+.area-agendamento {
+    display: flex;
+    gap: 30px;
+    padding: 30px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.informacoes,
+.formulario-container {
+    background:white;
+    padding: 25px;
+    border-radius: 10px;
+    flex: 1;
+}
+
+.informacoes h2,
+.formulario-container h2 {
+    color:#3E5B4B;
+    margin-bottom: 20px;
+}
+
+.informacoes h3 {
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+.informacoes p {
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+
+/* TEXTOS DO FORMULÁRIO */
+.formulario-container p {
+    margin-bottom: 12px;
+    line-height: 1.5;
+}
+
+/* LINK DE AGENDAMENTO */
+.formulario-container a {
+    display: block;
+    background: #3E5B4B;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 20px;
+}
+
+.formulario-container a:hover {
+    background: #AAB9A8;
+    color: #2E2E2E;
+}
+
+/* RODAPÉ */
+.rodape {
+    background: #3E5B4B;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    margin-top: 30px;
+}
+
+.rodape a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.rodape p {
+    margin-top: 10px;
+}
+

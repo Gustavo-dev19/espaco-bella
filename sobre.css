@@ -1,0 +1,166 @@
+
+/* CONFIGURAÇÕES GERAIS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #F7F3ED;
+    color: #2E2E2E;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+h1, h2, h3 {
+    font-family: Georgia, serif;
+    color: #3E5B4B;
+}
+
+/* CABEÇALHO */
+.topo {
+    background: white;
+    padding: 25px 6%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.logo {
+    color: #3E5B4B;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+nav a {
+    margin: 0 8px;
+}
+
+nav a:hover {
+    color: #C98272;
+}
+
+/* BOTÕES */
+.botao {
+    display: inline-block;
+    background: #3E5B4B;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 25px;
+}
+
+.botao:hover {
+    background: #2E4639;
+}
+
+/* APRESENTAÇÃO */
+.apresentacao {
+    text-align: center;
+    padding: 80px 10%;
+}
+
+.subtitulo {
+    color: #C98272;
+    font-weight: bold;
+}
+
+.apresentacao h1 {
+    font-size: 42px;
+    margin: 20px 0;
+}
+
+.apresentacao p {
+    max-width: 650px;
+    margin: 0 auto;
+}
+
+/* HISTÓRIA */
+.historia {
+    background: white;
+    padding: 60px 8%;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.imagem, .texto {
+    width: 50%;
+}
+
+.imagem img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+.texto h2 {
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+.texto p {
+    margin-bottom: 15px;
+}
+
+/* MISSÃO, VISÃO E VALORES */
+.valores {
+    padding: 70px 8%;
+    text-align: center;
+}
+
+.valores h2 {
+    font-size: 35px;
+    margin-bottom: 35px;
+}
+
+.cards {
+    display: flex;
+    gap: 25px;
+}
+
+.card {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    flex: 1;
+}
+
+.card h3 {
+    margin-bottom: 15px;
+}
+
+/* CONVITE */
+.convite {
+    background: #E9ECE5;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.convite h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.convite p {
+    margin-bottom: 25px;
+}
+
+/* RODAPÉ */
+.rodape {
+    background: #2E2E2E;
+    color: white;
+    text-align: center;
+    padding: 35px 15px;
+}
+
+.rodape p {
+    margin-top: 8px;
+    font-size: 14px;
+}

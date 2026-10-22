@@ -1,0 +1,487 @@
+/* CONFIGURAÇÕES GERAIS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+body {
+    background: #F7F3ED;
+    color: #2E2E2E;
+    font-family: "Montserrat", Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Faz as imagens ocuparem toda a largura disponível */
+img {
+    display: block;
+    width: 100%;
+    
+}
+
+a {
+    color:#2E2E2E;
+    text-decoration: none;
+    border-radius: 10px;
+}
+#bt-agenda{
+    border: #3e5b4b 10px solid ;
+    border-radius: 25px;
+    background-color: #3e5b4b;
+    color: white;
+    padding: 13px 23px;
+}
+.sub-titulo{
+    color: #C98272;
+}
+/* TEXTOS E FONTES */
+h1, h2, h3 {
+    font-family: "Playfair Display", Georgia, serif;
+    line-height: 1.12;
+}
+
+h1 {
+    font-size: 70px;
+    color: #3E5B4B;
+}
+
+h2 {
+    font-size: 50px;
+    color: #3E5B4B;
+}
+
+h3 {
+    font-size: 1.65rem;
+}
+
+p {
+    color: #66625E;
+}
+/* CABEÇALHO E MENU */
+.topo {
+    width: 100%;
+    margin: 0 auto;
+    min-height: 82px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+    border-bottom: 1px solid #DDD8CF;
+    background-color: white;
+}
+
+.logo {
+    font-family: "Playfair Display", Georgia, serif;
+    font-size: 1.25rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #3E5B4B;
+    white-space: nowrap;
+}
+
+
+/* Organiza os itens do menu lado a lado */
+.menu {
+    display: flex;
+    justify-content: center;
+    /* Espaço entre os itens */
+    gap: 25px;
+    flex-wrap: wrap;
+    font-size: .82rem;
+    color: #55514D;
+}
+
+.menu a:hover,
+.rodape a:hover {
+    color: #C98272;
+}
+/* BOTÕES */
+.botao {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: #3E5B4B;
+    color: white;
+    border-radius: 30px;
+    padding: 13px 23px;
+    font-weight: 600;
+    font-size: .84rem;
+    border: 1px solid #3E5B4B;
+}
+
+.botao:hover {
+    background: #2E4639;
+}
+
+.botao-topo {
+    white-space: nowrap;
+}
+
+.botao-link {
+    color:#2E2E2E;
+    font-weight: 600;
+    font-size: .9rem;
+    padding: 10px;
+    border:1px #2E2E2E solid;
+    border-radius: 20px 20px 20px 20px;
+}
+/* ETIQUETAS */
+.etiqueta {
+    display: inline-block;
+    background: #E9ECE5;
+    color: #3E5B4B;
+    border-radius: 20px;
+    padding: 6px 14px;
+    font-size: .68rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+/* PÁGINA INICIAL */
+/* Organiza texto e imagem em duas colunas */
+.hero {
+    width: min(1180px, 92%);
+    margin: 0 auto;
+    min-height: 720px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 70px;
+    padding: 75px 0;
+}
+
+.hero-texto p {
+    max-width: 530px;
+    font-size: 1.08rem;
+    margin: 25px 0;
+}
+.historia-texto >a{
+    border: #2E2E2E 1px solid;
+    padding: 10px;
+    border-radius: 20px 20px 20px 20px;
+}
+.hero-texto h1 em,
+.historia-texto h2 em {
+    color: #C98272;
+    font-weight: 500;
+}
+
+.hero-botoes {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.hero-imagem {
+    position: relative;
+}
+
+.hero-imagem img {
+    height: 620px;
+    border-radius: 48% 48% 22px 22px;
+}
+
+.secao,
+.secao-clara {
+    padding: 80px 4%;
+}
+
+.secao-clara {
+    background: #F7F3ED;
+}
+/* NOSSA HISTÓRIA */
+.historia {
+    background: #FFFFFF;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 80px;
+}
+
+.historia-imagem img {
+    height: 600px;
+    border-radius: 35px;
+}
+
+.historia-texto p {
+    max-width: 550px;
+    margin: 22px 0;
+}
+
+.historia-texto .botao-link {
+    display: inline-block;
+    margin-top: 15px;
+}
+/* TÍTULOS DAS SEÇÕES */
+.cabecalho-secao {
+    text-align: center;
+    max-width: 850px;
+    margin: 0 auto 55px;
+    
+}
+.filosofia{
+    background-color: white;
+}
+.cabecalho-secao h2 {
+    margin: 14px 0;
+}
+
+.cabecalho-secao p {
+    font-size: 1rem;
+}
+/* SERVIÇOS */
+/* Organiza os três cartões de serviços */
+.cards-servicos {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 28px;
+}
+
+.card-servico {
+    background: #FFFFFF;
+    border-radius: 25px;
+    overflow: hidden;
+    box-shadow: 0 15px 35px rgba(46, 46, 46, .07);
+}
+
+.card-servico img {
+    height: 280px;
+}
+
+.card-conteudo {
+    padding: 30px;
+}
+
+.card-conteudo h3 {
+    margin-bottom: 12px;
+}
+
+.card-conteudo p {
+    min-height: 115px;
+}
+
+.card-conteudo a {
+    display: inline-block;
+    margin-top: 18px;
+    color: #C98272;
+    font-weight: 700;
+}
+
+.card-conteudo a span {
+    margin-left: 8px;
+    font-size: 1.2rem;
+}
+
+.alinhado-centro {
+    text-align: center;
+}
+/* FILOSOFIA E BENEFÍCIOS */
+.beneficios {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.beneficio {
+    background: #F7F3ED;
+    border: 1px solid #E7E1D7;
+    border-radius: 20px;
+    padding: 28px;
+    min-height: 230px;
+}
+
+.icone {
+    width: 46px;
+    height: 46px;
+    border-radius: 12px;
+    background: #E9ECE5;
+    color: #3E5B4B;
+    display: grid;
+    place-items: center;
+    font-size: 1.7rem;
+    margin-bottom: 18px;
+}
+
+.beneficio h3 {
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+}
+
+.beneficio p {
+    font-size: .85rem;
+}
+/* GALERIA - NOSSO ESPAÇO */
+.galeria {
+    background: #F7F3ED;
+}
+
+.galeria-titulo {
+    text-align: center;
+    max-width: 1180px;
+}
+/* Organiza as imagens da galeria */
+.grade-galeria {
+    display: grid;
+    gap: 18px;
+}
+/* Primeira linha: 60% para a primeira imagem
+   e 40% para a segunda */
+
+.linha {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    gap: 18px;
+}
+/* Segunda linha: inverte para 40% e 60% */
+.linha-invertida {
+    grid-template-columns: 2fr 3fr;
+}
+
+.linha img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+.depoimentos {
+    background: #E9ECE5;
+}
+/* Coloca foto e nome da cliente lado a lado */
+.cliente {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+/* Deixa a foto redonda */
+.cliente img {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+
+.cards-depoimentos {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 25px;
+}
+/* DEPOIMENTOS */
+.depoimento {
+    background: white;
+    border-radius: 22px;
+    padding: 32px;
+}
+
+.estrelas {
+    color: #C98272;
+    letter-spacing: 4px;
+    margin-bottom: 20px;
+}
+
+.depoimento p {
+    margin-bottom: 22px;
+}
+
+.depoimento strong,
+.depoimento span {
+    display: block;
+}
+
+.depoimento strong {
+    color: #3E5B4B;
+}
+
+.depoimento span {
+    font-size: .78rem;
+    color: #88827C;
+}
+/* AGENDAMENTO */
+.agendar {
+    width: 100%;
+    min-height: 500px;
+    padding: 100px 8%;
+    /* Imagem ocupa todo o fundo da seção */
+    background-image: url("imagens/fundo.jpeg");
+    /* Faz a imagem preencher a seção */
+    background-size: cover;
+    background-position: center;
+
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 35px;
+    text-align: center;
+    padding-left: 25%;
+}
+
+.agendar h2 {
+    color: white;
+    margin: 15px 0;
+    
+}
+
+.agendar p {
+    color: #E7ECE8;
+    max-width: 600px;
+}
+.agendar a{
+    background-color: #C98272;
+    color: white;
+    border: none;
+}
+.botao-claro {
+    background: white;
+    color: #3E5B4B;
+    border-color: white;
+    white-space: nowrap;
+}
+/* RODAPÉ */
+.rodape {
+    background:#2E2E2E;
+    padding: 55px 8%;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 60px;
+}
+.rodape a{
+    color: white;
+}
+.rodape-links {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.rodape-links p{
+    color: #C98272;
+}
+.contatar strong{
+    color: #C98272;
+}
+.rodape p {  
+    font-size: .82rem;
+    margin-top: 8px;
+    color:#3E5B4B;
+}
+.contatar p{
+    color: #FFFFFF;
+}
+#disponibilidade{
+    color: #3E5B4B;
+}
+/* Faz a linha ocupar todas as colunas */
+.rodape hr {
+    grid-column: 1 / -1;
+    width: 100%;
+    border: none;
+    border-top: 1px solid #DDD8CF;
+}
+.copyright {
+    grid-column: 1 / -1;
+    text-align: left;
+    margin: 0;
+}
